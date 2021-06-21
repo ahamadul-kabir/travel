@@ -1,0 +1,36 @@
+****Whenever I download a Laravel project from git I need to run the command "Composer update"****
+
+
+• Lesson learned. When we upload code in cPanel then DB_Host should be like bellow. Which will found in phpmyadmin top section. OR Remote MySQL from cPanel.
+
+
+
+
+Timezone
+---------
+app => Providers => AppServiceProvider.php
+
+public function boot()
+    {
+        date_default_timezone_set('Asia/Dhaka');
+    }
+
+PHP Lesson
+----------
+Always clear an array like 
+arrayName = array();
+
+Laravel lesson
+---------------
+If you move your project from C drive to any other drive then run the bellow coomand
+"php artisan config:clear"
+
+LARAVEL AUTH
+----------------
+composer require laravel/ui
+php artisan ui bootstrap --auth
+php artisan migrate
+
+JSON to ARRAY inside PHP
+-------------------------
+$sDataArr = json_decode($sData->getContent(), true);

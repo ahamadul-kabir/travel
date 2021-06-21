@@ -1,0 +1,113 @@
+textarea {
+    resize: none;
+}
+
+table.dataTable {
+    width: 100% !important;
+}
+
+.table-loader {
+    visibility: hidden;
+}
+
+.table-loader:before {
+    visibility: visible;
+    display: table-caption;
+    content: " ";
+    width: 100%;
+    height: 600px;
+    background-image:
+        linear-gradient(rgba(235, 235, 235, 1) 1px, transparent 0),
+        linear-gradient(90deg, rgba(235, 235, 235, 1) 1px, transparent 0),
+        linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 0) 30%),
+        linear-gradient(rgba(240, 240, 242, 1) 35px, transparent 0);
+
+    background-repeat: repeat;
+
+    background-size:
+        1px 35px,
+        calc(100% * 0.1666666666) 1px,
+        30% 100%,
+        2px 70px;
+
+    background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0;
+
+    animation: shine 0.5s infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position:
+            0 0,
+            0 0,
+            40% 0,
+            0 0;
+    }
+}
+
+
+
+/* bootstrap material datetimepicker style */
+.hour-hand {
+    stroke: #398bf7;
+}
+
+/* circle#h-15 {
+    fill: #398bf7;
+} */
+.btn-success,.btn-success:hover{
+    background: #398bf7;
+}
+
+.dtp div.dtp-date,
+.dtp div.dtp-time{
+    background: #398bf7 !important;
+}
+.dtp>.dtp-content>.dtp-date-view>header.dtp-header {
+    background: #1e62bb !important;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #e9ecef;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: 300;
+    color: #e9ecef;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-weight: 300;
+    color: #e9ecef;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 300;
+    color: #e9ecef;
+}
+
+::placeholder {
+    /* Firefox 18- */
+    color: #e9ecef;
+    font-weight: 300;
+}
+
+/* table css */
+table tbody tr td i {
+    padding: 3px !important;
+    font-size: 13px;
+    transform: scale(1);
+    transition: all .3s;
+}
+table tbody tr td i:hover {
+    transform: scale(1.5);
+}
