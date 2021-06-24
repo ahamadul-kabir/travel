@@ -91,7 +91,8 @@ Route::group(['middleware' => 'admin'], function () {
 	// restaurants
 	Route::get('/restaurants','Restaurants@restaurant');
 	
-	
+	//travel Gear 
+	Route::get('/travelgear','TravelGear@travelgear');
 
 });
 

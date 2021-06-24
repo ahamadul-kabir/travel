@@ -191,6 +191,12 @@
 
                                                 </li> 
 
+                                                <li> <a class="waves-effect waves-dark" href="{{ url('/travelgear') }}" aria-expanded="false"><i
+                                                    data-icon="P" class="linea-icon  icon-layers"></i><span
+                                                    class="hide-menu">Travel Gear</span></a>
+
+                                                </li>
+
                                                 <li> <a class="waves-effect waves-dark" href="{{ url('/travelers') }}" aria-expanded="false"><i
                                                     data-icon="P" class="linea-icon  icon-layers"></i><span
                                                     class="hide-menu">Travellers</span></a>
